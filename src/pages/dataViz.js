@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Layout from '../components/layout'
 import dataVizStyles from '../styles/dataViz.module.scss'
 import PieClass from '../components/visualization'
-
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 var allData = [
         [
@@ -29,7 +30,7 @@ var allData = [
     ]
 
 
-const DataVizPage = () => {
+const DataVizPage = ({ data }) => {
     const [week, setWeek] = useState(0);
     const prevWeek = () => {
         if (week !== 0) {
@@ -44,30 +45,49 @@ const DataVizPage = () => {
     return (
         <div>
             <Layout>
-                <div className={dataVizStyles.app}>
-                    <p className={dataVizStyles.title}>
-                        Fitbit Health Data Dashboard
-                    </p>
-                    <div className={dataVizStyles.weekButtons}>
-                        <button onClick={prevWeek}>{"<"}{"<"}</button>
-                        <p className={dataVizStyles.weekLabel}>Week {week}</p>
-                        <button onClick={nextWeek}>{">"}{">"}</button>
-                    </div>
-                    <PieClass 
-                        data={[14.28,14.28,14.28,14.28,14.28,14.28,14.28]} 
-                        sleepData={allData[0][week]}
-                        calData={allData[1][week]}
-                        stepData={allData[2][week]}
-                        width = {700}
-                        height = {700}
-                        innerRadius = {100} 
-                        outerRadius={160} 
+                <div className={dataVizStyles.displays}>
+                    <Img
+                        className={dataVizStyles.legend}
+                        fluid={data.legend.childImageSharp.fluid}
+                        alt=""
                     />
-                </div>  
+                    <div className={dataVizStyles.app}>
+                        <p className={dataVizStyles.title}>
+                            Fitbit Health Data Dashboard
+                        </p>
+                        <div className={dataVizStyles.weekButtons}>
+                            <button onClick={prevWeek}>{"<"}{"<"}</button>
+                            <p className={dataVizStyles.weekLabel}>Week {week}</p>
+                            <button onClick={nextWeek}>{">"}{">"}</button>
+                        </div>
+                        <PieClass 
+                            data={[14.28,14.28,14.28,14.28,14.28,14.28,14.28]} 
+                            sleepData={allData[0][week]}
+                            calData={allData[1][week]}
+                            stepData={allData[2][week]}
+                            width = {700}
+                            height = {700}
+                            innerRadius = {100} 
+                            outerRadius={160} 
+                        />
+                    </div>  
+                </div>
             </Layout>
         </div>
     )
     
 }
+
+export const query = graphql`
+  query {    
+    legend: file(relativePath: { eq: "legend.png" }) { 
+        childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+    }
+  }
+`
 
 export default DataVizPage
