@@ -1,0 +1,28 @@
+.app {
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.weekButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekLabel {
+  margin-top: 0px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
