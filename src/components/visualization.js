@@ -8,6 +8,7 @@ class PieClass extends Component {
     this.sleepArcs = [];
     this.calArcs = [];
     this.stepArcs = [];
+    this.dates = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
     this.createPie1 = d3
       .pie()
       .value(d => d)
@@ -25,6 +26,10 @@ class PieClass extends Component {
       .arc()
       .innerRadius(props.outerRadius+60)
       .outerRadius(props.outerRadius+120);
+    this.createArc4 = d3
+      .arc()
+      .innerRadius(props.outerRadius+120)
+      .outerRadius(props.outerRadius+160);
     this.colors = [d3.rgb(215, 184, 255),d3.rgb(175, 247, 161),d3.rgb(143, 231, 255)];
     this.valColors = [d3.rgb(164, 112, 230),d3.rgb(100, 204, 80),d3.rgb(0, 152, 194)];
 
@@ -95,6 +100,19 @@ class PieClass extends Component {
       .attr("class", "arc")
       .attr("d", this.createArc3)
       .attr("fill", (d, i) => this.colors[2]);
+    path
+      .append("path")
+      .attr("class", "arc")
+      .attr("d", this.createArc4)
+      .attr("fill", "white");
+    path
+      .append("text")
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .attr("transform", d => `translate(${this.createArc4.centroid(d)})`)
+      .style("fill", "black")
+      .style("font-size", 10)
+      .text((d, i) => this.dates[i]);
     var i;
     for (i = 0; i < 7; i++) {
         path
@@ -163,6 +181,20 @@ class PieClass extends Component {
 
     const path = groupWithEnter.append("g").attr("class", "arc");
   
+    path
+      .append("path")
+      .attr("class", "arc")
+      .attr("d", this.createArc4)
+      .attr("fill", "white");
+    path
+      .append("text")
+      .attr("text-anchor", "middle")
+      .attr("alignment-baseline", "middle")
+      .attr("transform", d => `translate(${this.createArc4.centroid(d)})`)
+      .style("fill", "black")
+      .style("font-size", 10)
+      .text((d, i) => this.dates[i]);
+      
     path
       .append("path")
       .attr("class", "arc")
