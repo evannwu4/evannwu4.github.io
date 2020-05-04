@@ -8,24 +8,42 @@
 
 .title {
   text-align: center;
-  font-size: 30px;
+  font-size: 36px;
   font-style: bold;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.weekButtons {
+.week-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
-.weekLabel {
+.week-label {
   margin-top: 0px;
+  color: #404040;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
   margin-left: 60px;
   margin-right: 60px;
+}
+
+.date-specifics {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #404040;
+}
+
+.button-next {
+  margin-bottom: 30px;
 }
 
 .legend {
@@ -41,5 +59,4 @@
 .displays {
   display: flex;
   flex-direction: row;
-
 }
