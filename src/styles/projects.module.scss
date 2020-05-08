@@ -1,15 +1,42 @@
+.project-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
 .project-item-thumbnail {
     height: 175px;
     width: 175px;
     margin-right: 20px;
-    background: '../resources/img/github_square_black.png'
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.img-alignment {
+    max-width: 100%;
+    align-self: flex-start;
 }
 
 .project-item-thumbnail:hover {
     opacity: 0.6;
 }
 
+.project-tech {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.project-date {
+    font-size: 1.1rem;
+    color: black;
+    align-self: flex-start;
+}
+
 .project-item-text {
     font-size: 1.1rem;
     color: #888888;
+    align-self: flex-start;
 }
