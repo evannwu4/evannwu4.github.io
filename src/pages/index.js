@@ -9,11 +9,8 @@ const IndexPage = ({ data }) => {
     return (
         <Layout>
             <div className={indexStyles.photoIntro}>
-            <Img
-                className={indexStyles.profileImg}
-                fluid={data.profile.childImageSharp.fluid}
-                alt=""
-            />                
+            <img className={indexStyles.profileImg} src="../../profile.jpg" alt="" />
+        
             </div>
             <div className={indexStyles.introTextGroup}>
 
