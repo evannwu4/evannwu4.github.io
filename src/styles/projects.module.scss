@@ -6,20 +6,35 @@
 }
 
 .project-item-thumbnail {
-    height: 175px;
-    width: 175px;
-    margin-right: 20px;
-    max-width: 100%;
-    align-self: flex-start;
-}
-
-.img-alignment {
+    max-height: 15vw;
+    max-width: 15vw;
     max-width: 100%;
     align-self: flex-start;
 }
 
 .project-item-thumbnail:hover {
     opacity: 0.6;
+}
+
+.project-anchor {
+    max-width: 15vw;
+    align-self: flex-start;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: rgb(37, 37, 37);
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.project-item-text {
+    font-size: 1.1rem;
+    color: #525252;
+    align-self: flex-start;
+    max-width: 65vw;
 }
 
 .project-tech {
@@ -35,8 +50,3 @@
     align-self: flex-start;
 }
 
-.project-item-text {
-    font-size: 1.1rem;
-    color: #888888;
-    align-self: flex-start;
-}
