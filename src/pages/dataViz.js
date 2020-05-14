@@ -77,11 +77,11 @@ const DataVizPage = ({ data }) => {
         <div>
             <Layout>
                 <div className={dataVizStyles.displays}>
-                    <Img
+                    {/* <Img
                         className={dataVizStyles.legend}
                         fluid={data.legend.childImageSharp.fluid}
                         alt=""
-                    />
+                    /> */}
                     <div className={dataVizStyles.app}>
                         <p className={dataVizStyles.title}>
                             Fitbit Health Data Dashboard
@@ -114,16 +114,5 @@ const DataVizPage = ({ data }) => {
     
 }
 
-export const query = graphql`
-  query {    
-    legend: file(relativePath: { eq: "legend.png" }) { 
-        childImageSharp {
-            fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-    }
-  }
-`
 
 export default DataVizPage

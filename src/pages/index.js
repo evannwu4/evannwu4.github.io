@@ -28,36 +28,15 @@ const IndexPage = ({ data }) => {
             <h3 className={indexStyles.hobbyElement}>
                 I am an avid participant of a CMU sport called buggy. If you don’t know anything about buggy here’s a cool <a href="https://www.youtube.com/watch?v=j0TpeSgX4u0">clip</a> of one of our races. I am a veteran mechanic on the team and work primarily on design, manufacturing, and optimization of buggies. 
             </h3>
-            <Img
+            <img
                 className={indexStyles.buggyImg}
-                fluid={data.buggy.childImageSharp.fluid}
+                src="../../buggy.jpg"
                 alt=""
             />
-            
-
-
         </Layout>
     )
 }
 
-export const query = graphql`
-  query {
-    profile: file(relativePath: { eq: "profile.jpg" }) {    
-            childImageSharp {
-              fluid(maxWidth: 2500, maxHeight: 2500) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-    
-    buggy: file(relativePath: { eq: "buggy.jpg" }) { 
-        childImageSharp {
-            fluid(maxWidth: 1400, maxHeight: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-    }
-  }
-`
+
 
 export default IndexPage

@@ -5,11 +5,41 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+      title: 'Evann Wu Personal Website',
+      author: 'Evann Wu'
+  },
   plugins: [
-    'gatsby-plugin-sass', 
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp', 
-    { resolve: 'gatsby-source-filesystem', options: { path: './src/resources/img/' } },
+      {
+          resolve: 'gatsby-source-contentful',
+          options: {
+              spaceId: '7icxsgjiha62',
+              accessToken: 'zubmL_F0bMxOKfCYWa0wkelKR1ioxOFqcwwtByXl-xM'
+          }
+      },
+      'gatsby-plugin-sass',
+      {
+          resolve: 'gatsby-source-filesystem',
+          options: {
+              name: 'src',
+              path: `${__dirname}/src/`
+          }
+      },
+      'gatsby-plugin-sharp',
+      {
+          resolve: 'gatsby-transformer-remark',
+          options: {
+              plugins: [
+                  'gatsby-remark-relative-images',
+                  {
+                      resolve: 'gatsby-remark-images',
+                      options: {
+                          maxWidth: 750,
+                          linkImagesToOriginal: false
+                      }
+                  }
+              ]
+          }
+      }
   ]
 }
