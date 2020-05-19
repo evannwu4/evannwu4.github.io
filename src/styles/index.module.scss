@@ -15,13 +15,23 @@
     padding-top: 20px;
 }
 
+.heading-element {
+    font-size: 1.7em;
+}
+
 .hobby-element {
     padding-left: 10px;
-    font-size: 1.1em;
+    font-size: 1.3em;
+
     max-width: 60vw;
 }
 
+.link {
+    font-weight: 600;
+}
+
 .intro-text {
+    padding-left: 10px;
     font-size: 1.3em;
     max-width: 60vw;
 }
@@ -37,9 +47,47 @@
     max-width: 60vw;
 }
 
-.intro-text-group {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
-    margin-bottom: 20px;
+@media screen and (max-width: 800px) {
+    .profile-img {
+        max-width: 80vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .buggy-img {
+        width: 80vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    
+    .heading-element {
+        font-size: 5.5vw;
+    }
+    
+    .hobby-element {
+        padding-left: 0;
+        font-size: 4vw;
+    
+        max-width: 80vw;
+    }
+    
+    .link {
+        font-weight: 600;
+    }
+    
+    .intro-text {
+        padding-left: 0;
+        font-size: 4vw;
+        max-width: 80vw;
+    }
+    
+    .photo-intro {
+        display: flex;
+        flex-direction: row;
+        max-width: 80vw;
+    }
 }

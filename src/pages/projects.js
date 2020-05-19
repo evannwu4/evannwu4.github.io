@@ -3,11 +3,7 @@ import Layout from '../components/layout'
 import projectsStyle from '../styles/projects.module.scss'
 
 const ProjectPage = () => {
-    const loadLink = function(link) {
-        window.location.href = link;
-    };
     return (
-
         <Layout>
             <h1>Projects</h1>
             <div className={projectsStyle.projectItem}>

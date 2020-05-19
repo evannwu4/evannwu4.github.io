@@ -16,3 +16,15 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 0 auto;
+        max-width: 80vw;
+        padding: 1rem;
+    
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
