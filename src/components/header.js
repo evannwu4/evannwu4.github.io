@@ -5,6 +5,11 @@ import headerStyles from '../styles/header.module.scss'
 const Header = () => {
     return (
         <header className={headerStyles.headerOrg}>
+            <div className={headerStyles.iconsList}>
+                <a className={headerStyles.iconAnchor} href="https://github.com/evannwu4"><img src="../../githubIcon.svg" alt="" className={headerStyles.icon} /></a>
+                <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
+                <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
+            </div>
             <div className={headerStyles.textMain}>
                 <h1 className={headerStyles.headerFormat}>
                     <Link className={headerStyles.title} activeClassName={headerStyles.activeTitle} to="/">
@@ -28,11 +33,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <div className={headerStyles.iconsList}>
-                <a className={headerStyles.iconAnchor} href="https://github.com/evannwu4"><img src="../../githubIcon.svg" alt="" className={headerStyles.icon} /></a>
-                <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
-                <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
-            </div>
+            
         </header>
 
     )
