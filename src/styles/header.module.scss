@@ -70,7 +70,9 @@
 .active-nav-item {
     color: #0a0a0a;
 }
-
+.hamburgerButton {
+    display: none;
+}
 @media screen and (max-width: 800px) {
     .header-format {
         text-align: center;
@@ -102,5 +104,8 @@
     .nav-list {
         display: none;
     }
-    
+
+    .hamburgerButton {
+        display: block;
+    }
 }
