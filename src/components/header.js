@@ -47,7 +47,7 @@ const Header = () => {
                     <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/" target="_blank"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
                     <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820" target="_blank"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
                 </div>
-                <Menu open={open} />
+                <Menu open={open}/>
                 <HamburgerMenu
                     className={headerStyles.hamburgerButton}
                     isOpen={open}
@@ -58,7 +58,7 @@ const Header = () => {
                     rotate={0}
                     color='black'
                     borderRadius={0}
-                    animationDuration={0.5}
+                    animationDuration={0.3}
                 />
             </header>
 
@@ -94,7 +94,7 @@ const Header = () => {
                     <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/" target="_blank"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
                     <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820" target="_blank"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
                 </div>
-                <Menu open={open} />
+                <Menu open={open}/>
                 <HamburgerMenu
                     className={headerStyles.hamburgerButton}
                     isOpen={open}
@@ -105,7 +105,7 @@ const Header = () => {
                     rotate={0}
                     color='black'
                     borderRadius={0}
-                    animationDuration={0.5}
+                    animationDuration={0.3}
                 />
             </header>
 

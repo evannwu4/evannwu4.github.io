@@ -21,6 +21,13 @@
     align-content: left;
 }
 
+.menu {
+    display: none;
+}
+.menuAway {
+    display: none;
+}
+
 .icons-list {
     display: flex;
     flex-direction: column;
@@ -111,6 +118,25 @@
     display: none;
 }
 @media screen and (max-width: 800px) {
+    .menu {
+        display: flex;
+        z-index: 1;
+        flex-direction: column;
+        background: white;
+        height: 10.5em;
+        text-align: left;
+        padding: 1.5rem;
+        position: absolute;
+        top: 6em;
+        right: 0;
+        width: 30vw;
+        list-style-type: none;
+    }
+
+    .menuAway {
+        display: none;
+    }
+
     .header-format {
         text-align: center;
     }
@@ -120,6 +146,7 @@
         flex-direction: row;
         justify-content: center;
         padding-bottom: 1.5em;
+        height: 4em;
 
     }
     
@@ -149,7 +176,7 @@
     .nav-item {
         color: #6b6b6b;
         width: 20vw;
-        font-size: 4vw;
+        font-size: 2em;
         text-decoration: none;
         padding-bottom: 20px;
     }
