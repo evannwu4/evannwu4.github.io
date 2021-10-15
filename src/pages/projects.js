@@ -5,23 +5,7 @@ import projectsStyle from '../styles/projects.module.scss'
 const ProjectPage = () => {
     return (
         <Layout>
-            <h1>Projects</h1>
-            <div className={projectsStyle.projectItem}>
-                <a className={projectsStyle.projectAnchor} href="https://github.com/evannw/htuquantumml">
-                <img src="../../github_square_black.png" alt="" className={projectsStyle.projectItemThumbnail} />
-                </a>
-                <h3 className={projectsStyle.projectItemText}>
-                    <h2 className={projectsStyle.projectTitle}> HTU Quantum ML </h2> 
-                    Michael Kronovet, Anoop Bhat, Andrew Smith, Tanishq Kancharla, and I created the Quantum ML program for Hack The Universe. The premise of the competition was to combine physics and computer science in an interesting and novel way. Our program simulates the evolution of a randomly-generated many body quantum mechanical system. We use a neural network structure that finds local energy minima by gradient descent of a given Hamiltonian (a potential energy function). This program is useful for people looking to study how different Hamiltonian functions affects the evolution of quantum states.
-                    <br/>
-                    <h3 className={projectsStyle.projectTech}>
-                    Core Technologies: Python, NumPy, MatPlotLib
-                    </h3>
-                    <h3 className={projectsStyle.projectDate}>
-                    Completed Feb. 2019                
-                    </h3>
-                </h3>
-            </div>
+            <h1 className={projectsStyle.title}>projects</h1>
             <div className={projectsStyle.projectItem}>
                 <a className={projectsStyle.projectAnchor} href="https://github.com/Mochael/Automated-Logo-Generator">
                 <img src="../../github_square_black.png" alt="" className={projectsStyle.projectItemThumbnail} />
@@ -47,7 +31,7 @@ const ProjectPage = () => {
                     Professor Doppleganger is a project that takes a picture of someone’s face as input and finds the CMU professor that looks most similar to them. It uses the Microsoft Azure Face API. The program sends a request to Microsoft Azure with the input image. Then it takes the results and compares it to all CMU professors and generates a score based on similarity. It then returns the image of the professor with the highest score.
                     <br/>
                     <h3 className={projectsStyle.projectTech}>
-                    Core Technologies: Python, Microsoft Azure, Django, Json
+                    Core Technologies: Python, Microsoft Azure, Django, JSON
                     </h3>
                     <h3 className={projectsStyle.projectDate}>
                     Completed Feb. 2018  

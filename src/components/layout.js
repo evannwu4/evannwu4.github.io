@@ -6,14 +6,22 @@ import layoutStyles from '../styles/layout.module.scss'
 
 const Layout = (props) => {
     return (
-        <div className={layoutStyles.container}>
-            <div className={layoutStyles.headerContent}>
-                <Header />
+        <div className={layoutStyles.main}>
+            <div className={layoutStyles.spiff}>
+                <div className={layoutStyles.headerContent}>
+                    <Header />
+                </div>
             </div>
-            <div className={layoutStyles.content}>
-                {props.children}
+            <div className={layoutStyles.container}>
+                <div className={layoutStyles.content}>
+                    {props.children}
+                </div>
+                
             </div>
-            <Footer />
+            <div className={layoutStyles.footerContent}>
+                <Footer />
+            </div>
+            
         </div>
     )
 }

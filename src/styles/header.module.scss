@@ -2,40 +2,75 @@
     display: flex;
     flex-direction: row;
     align-content: left;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.text-main {
-    margin-left: 0;
-    margin-right: 1vw;
+.headerOrgNoAni {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
 }
 
 .icons-list {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-    margin-right: 1vw;
-    align-content: left;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 22.5px;
+    height: 22.5px;
     border-radius: 20%;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 .icon-anchor {
-    margin-top: 5px;
+    margin-top: 2.5px;
     margin-bottom: 0;
 }
 
+.eNoAni {
+    transform: rotate(-15deg);
+}
+
+.e {
+    animation: rotateAnimation ease 1.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(-20deg);
+    }
+    45% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+
 .title {
     color: #000000;
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-decoration: none;
-    letter-spacing: 10px;
-    margin-left: 10px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: row;
 }
 
 .title:hover {
@@ -43,7 +78,8 @@
 }
 
 .header-format {
-    text-align: center;
+    text-align: left;
+    margin-bottom: 0.1em;
 }
 
 .nav-list {
@@ -52,14 +88,15 @@
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+    text-align: left;
 }
 
 .nav-item {
     color: #6b6b6b;
     font-size: 1.3rem;
     margin-right: 2rem;
-    margin-left: 2rem;
     text-decoration: none;
+    letter-spacing: 3px;
 }
 
 .nav-item:hover {
@@ -76,17 +113,21 @@
 @media screen and (max-width: 800px) {
     .header-format {
         text-align: center;
-        max-width: 80vw;
     }
+
     .header-org {
         display: flex;
         flex-direction: row;
-        max-width: 80vw;
+        justify-content: center;
+        padding-bottom: 1.5em;
+
     }
     
     .text-main {
         margin-left: 0;
         margin-right: 0;
+        height: 10vh;
+        max-width: 90vw;
     }
     
     .icons-list {
@@ -95,7 +136,7 @@
       
     .title {
         color: #000000;
-        font-size: 7vw;
+        font-size: 1.3em;
         text-decoration: none;
         letter-spacing: 2vw;
         max-width: 80vw;
@@ -105,7 +146,18 @@
         display: none;
     }
 
+    .nav-item {
+        color: #6b6b6b;
+        width: 20vw;
+        font-size: 4vw;
+        text-decoration: none;
+        padding-bottom: 20px;
+    }
+
     .hamburgerButton {
-        display: block;
+        display: flex;
+        margin-top: 2.2em;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
