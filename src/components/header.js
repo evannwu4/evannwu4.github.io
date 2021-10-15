@@ -10,11 +10,11 @@ const Header = () => {
     const toggleHamburger = () => {
         setOpen(!open);
     };
-    var animate = false
+    var animate = true
     const isBrowser = () => typeof window !== "undefined"
     if (isBrowser()) {
         const pathname = isBrowser() && window.location.pathname
-        animate = pathname == "/" || pathname == ""
+        animate = pathname == '/' || pathname == ''
     }
     
     if (animate)

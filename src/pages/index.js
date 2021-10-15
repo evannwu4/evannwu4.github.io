@@ -19,7 +19,7 @@ const IndexPage = () => {
             </div>
             <br></br>
             <div className={indexStyles.introText}>
-                Feel free to reach out to me at evannwu@gmail.com!
+                Feel free to reach out to me at evannjwu@gmail.com!
             </div>
             {/* <div className={indexStyles.photoIntro}>
             <img className={indexStyles.profileImg} src="../../profile.jpg" alt="" />
