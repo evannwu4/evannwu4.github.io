@@ -31,12 +31,13 @@
     "gatsby-transformer-remark": "^2.8.8",
     "gatsby-transformer-sharp": "^2.5.2",
     "nivo": "^0.31.0",
-    "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hamburger-menu": "^1.2.1",
     "react-shapes": "^0.1.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
