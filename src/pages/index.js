@@ -10,7 +10,7 @@ const IndexPage = () => {
                 Hi! I'm Evann 🙋‍♂️
             </div> 
             <div className={indexStyles.introText}>
-                I'm a software engineer currently based in Washington DC, where I work on <a className={indexStyles.link} href="https://hitchhikers.yext.com/developer-preview/sites/?_ga=2.252814281.1907773560.1634117095-359506629.1612378560&_gac=1.250759668.1634117098.CjwKCAjwh5qLBhALEiwAioodsxBP7ITbMH6aLY8I556_n56jYEx7p6_m8DrE9vm2qgIQPFS8yeEDMxoCQfEQAvD_BwE">Yext Sites</a>.
+                I'm a software engineer currently based in Washington DC, where I work on <a className={indexStyles.link} href="https://hitchhikers.yext.com/developer-preview/sites/?_ga=2.252814281.1907773560.1634117095-359506629.1612378560&_gac=1.250759668.1634117098.CjwKCAjwh5qLBhALEiwAioodsxBP7ITbMH6aLY8I556_n56jYEx7p6_m8DrE9vm2qgIQPFS8yeEDMxoCQfEQAvD_BwE" target="_blank">Yext Sites</a>.
                 I graduated from Carnegie Mellon University in 2021 with a bachelor's in computer engineering.
             </div>
             <br></br>

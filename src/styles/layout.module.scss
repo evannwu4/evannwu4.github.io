@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'open_sansregular';
-    src: url("http://localhost:8000/fonts/opensans-variablefont_wdthwght-webfont.woff2") format('woff2'),
-         url("http://localhost:8000/fonts/opensans-variablefont_wdthwght-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .container {
     margin: 0 auto;
     width: 50vw;
     padding-top: 5em;
-    font-family: 'open_sansregular';
+    font-family: 'Open Sans', sans-serif;;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;

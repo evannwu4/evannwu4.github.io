@@ -10,7 +10,7 @@ const Header = () => {
     const toggleHamburger = () => {
         setOpen(!open);
     };
-    const animate = false
+    var animate = false
     const isBrowser = () => typeof window !== "undefined"
     if (isBrowser()) {
         const pathname = isBrowser() && window.location.pathname
@@ -34,7 +34,7 @@ const Header = () => {
                                 <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">projects</Link>
                             </li>
                             <li>
-                                <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="../../resume.pdf">resume</a>
+                                <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="../../resume.pdf" target="_blank">resume</a>
                             </li>
                             <li>
                                 <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">blog</Link>
@@ -43,9 +43,9 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className={headerStyles.iconsList}>
-                    <a className={headerStyles.iconAnchor} href="https://github.com/evannwu4"><img src="../../githubIcon.svg" alt="" className={headerStyles.icon} /></a>
-                    <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
-                    <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
+                    <a className={headerStyles.iconAnchor} href="https://github.com/evannwu4" target="_blank"><img src="../../githubIcon.svg" alt="" className={headerStyles.icon} /></a>
+                    <a className={headerStyles.iconAnchor} href="https://www.linkedin.com/in/evannwu/" target="_blank"><img src="../../linkedinIcon.png" alt="" className={headerStyles.icon} /></a>
+                    <a className={headerStyles.iconAnchor} href="https://medium.com/@evannwu_15820" target="_blank"><img src="../../mediumIcon.png" alt="" className={headerStyles.icon} /></a>
                 </div>
                 <Menu open={open} />
                 <HamburgerMenu
