@@ -8,6 +8,7 @@
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    z-index: 2;
 }
 @keyframes fadeInAnimation {
     0% {
