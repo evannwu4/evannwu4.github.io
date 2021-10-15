@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'open_sansregular';
-    src: url("evannwu.com/fonts/opensans-variablefont_wdthwght-webfont.woff2") format('woff2'),
-         url("evannwu.com/fonts/opensans-variablefont_wdthwght-webfont.woff") format('woff');
+    src: url("http://localhost:8000/fonts/opensans-variablefont_wdthwght-webfont.woff2") format('woff2'),
+         url("http://localhost:8000/fonts/opensans-variablefont_wdthwght-webfont.woff") format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 
 .container {
     margin: 0 auto;
