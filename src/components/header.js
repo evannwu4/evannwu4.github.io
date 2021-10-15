@@ -14,7 +14,7 @@ const Header = () => {
     const isBrowser = () => typeof window !== "undefined"
     if (isBrowser()) {
         const pathname = isBrowser() && window.location.pathname
-        animate = pathname == "/"
+        animate = pathname == "/" || pathname == ""
     }
     
     if (animate)

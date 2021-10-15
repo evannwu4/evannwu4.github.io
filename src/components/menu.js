@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 
 
 export const StyledMenu = styled.nav`
-  display: flex;
+  display: ${({ open }) => open ? 'none' : 'flex'};
   flex-direction: column;
   background: white;
   height: 10em;
