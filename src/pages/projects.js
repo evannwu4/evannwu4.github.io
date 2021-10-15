@@ -7,7 +7,7 @@ const ProjectPage = () => {
         <Layout>
             <h1 className={projectsStyle.title}>projects</h1>
             <div className={projectsStyle.projectItem}>
-                <a className={projectsStyle.projectAnchor} href="https://github.com/Mochael/Automated-Logo-Generator">
+                <a className={projectsStyle.projectAnchor} href="https://github.com/Mochael/Automated-Logo-Generator" target="_blank">
                 <img src="../../github_square_black.png" alt="" className={projectsStyle.projectItemThumbnail} />
                 </a> 
                 <h3 className={projectsStyle.projectItemText}>
@@ -23,7 +23,7 @@ const ProjectPage = () => {
                 </h3>
             </div>
             <div className={projectsStyle.projectItem}>
-                <a className={projectsStyle.projectAnchor} href="https://github.com/Mochael/ProfessorDoppleganger">
+                <a className={projectsStyle.projectAnchor} href="https://github.com/Mochael/ProfessorDoppleganger" target="_blank">
                 <img src="../../github_square_black.png" alt="" className={projectsStyle.projectItemThumbnail} />
                 </a>
                 <h3 className={projectsStyle.projectItemText}>
@@ -39,7 +39,7 @@ const ProjectPage = () => {
                 </h3>
             </div>
             <div className={projectsStyle.projectItem}>
-                <a className={projectsStyle.projectAnchor} href="https://github.com/tklightningfast/GunAR">
+                <a className={projectsStyle.projectAnchor} href="https://github.com/tklightningfast/GunAR" target="_blank">
                 <img src="../../github_square_black.png" alt="" className={projectsStyle.projectItemThumbnail} />
                 </a>
                 <h3 className={projectsStyle.projectItemText}>

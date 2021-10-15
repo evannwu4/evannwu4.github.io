@@ -30,7 +30,7 @@ const Menu = ({ open }) => {
           <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">projects</Link>
       </li>
       <li>
-          <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="../../resume.pdf">resume</a>
+          <a className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} href="../../resume.pdf" target="_blank">resume</a>
       </li>
       <li>
           <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/blog">blog</Link>
