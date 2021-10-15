@@ -8,7 +8,6 @@
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    z-index: 2;
 }
 @keyframes fadeInAnimation {
     0% {
@@ -31,6 +30,7 @@
 
 .spiff {
     background-color: rgb(255, 247, 242);
+    z-index: 200;
 }
 
 .header-content {

@@ -120,10 +120,9 @@
 @media screen and (max-width: 800px) {
     .menu {
         display: flex;
-        z-index: 1;
         flex-direction: column;
         background: white;
-        height: 10em;
+        height: 22vw;
         text-align: left;
         padding: 1.5rem;
         position: fixed;
